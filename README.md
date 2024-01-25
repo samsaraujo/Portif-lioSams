@@ -1,10 +1,10 @@
 ## MEU PORTIFÓLIO 🚀😊
 
 Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre:
-🎓 Minha formação
-💼 Minhas experiências profissionais  
-🚧 Meus projetos 
-📬 Meus contatos 
+-🎓 Minha formação
+-💼 Minhas experiências profissionais  
+-🚧 Meus projetos 
+-📬 Meus contatos 
 
 ---------------
 
