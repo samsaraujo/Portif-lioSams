@@ -1,0 +1,87 @@
+.introducao {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin:  0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.introducao img {
+    border-radius: 20px;
+}
+
+.introducao h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/*adicionando o elemento svg atras do texto*/
+.introducao h1::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 70px;
+    background: url('../img/square-solid.svg') no-repeat center;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1; /*aqui joga o elemento atras do texto*/
+}
+
+.introducao p {
+    font-size: 1.5rem;
+    color: #008080;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .introducao h1 {
+        font-size: 3rem;
+    }
+    .introducao h1::before {
+        background: url('../img/square-solid.svg') no-repeat center;
+        display: block;
+        width: 70px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 800px){
+    .introducao {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .introducao h1 {
+        font-size: 2rem;
+    }
+    .introducao h1::before {
+        background: url('../img/square-solid.svg') no-repeat center;
+        display: block;
+        width: 70px;
+        height: 40px;
+    }
+    .introducao p {
+        font-size: 1.2rem;
+        color: #008080;
+        text-transform: uppercase;
+    }
+}
+    
+
+@media (max-width: 400px) {
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+    .introducao img {
+        display: none;
+    }
+    .introducao p {
+        font-size: 1rem;
+        color: #008080;
+        text-transform: uppercase;
+    }
+}
